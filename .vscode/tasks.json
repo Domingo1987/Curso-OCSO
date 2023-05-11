@@ -1,28 +1,14 @@
 {
-    "version": "2.0.0",
-    "tasks": [
+  "version": "2.0.0",
+  "tasks": [
       {
-        "label": "build_c",
-        "type": "shell",
-        "command": "gcc",
-        "args": [
-          "-g",
-          "*.c",
-          "-o",
-          "${fileDirname}\\main.exe"
-        ],
-        "options": {
-          //"cwd": "${workspaceFolder}\\DesafioEmpleados\\"
-          "cwd": "${fileDirname}"
-        },
-        "group": {
-          "kind": "build",
-          "isDefault": true
-        },
-        "problemMatcher": [
-          "$gcc"
-        ]
-      },
-
-    ]
+          "label": "build and run",
+          "type": "shell",
+          "command": "gcc ${file} -o ${fileDirname}/${fileBasenameNoExtension} && ${fileDirname}/${fileBasenameNoExtension}",
+          "group": {
+              "kind": "build",
+              "isDefault": true
+          }
+      }
+  ]
 }

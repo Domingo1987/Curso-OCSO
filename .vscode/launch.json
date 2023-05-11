@@ -1,18 +1,18 @@
 {
   "version": "0.2.0",
   "configurations": [
+    
       {
           "name": "C: Launch",
           "type": "cppdbg",
           "request": "launch",
-          "program": "${fileDirname}\\main.exe",
+          "program": "${fileDirname}/${fileBasenameNoExtension}",
           "args": [],
           "stopAtEntry": false,
           "cwd": "${workspaceFolder}",
           "environment": [],
-          "externalConsole": true,
+          "externalConsole": false,
           "MIMode": "gdb",
-          "miDebuggerPath": "C:\\msys64\\mingw64\\bin\\gdb.exe",
           "setupCommands": [
               {
                   "description": "Enable pretty-printing for gdb",
@@ -20,7 +20,8 @@
                   "ignoreFailures": true
               }
           ],
-          "preLaunchTask": "build_c"
+          "preLaunchTask": "build and run",
+          "miDebuggerPath": "/usr/bin/gdb"
       }
   ]
 }
