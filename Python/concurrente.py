@@ -2,9 +2,9 @@ import multiprocessing
 import time
 
 def worker(name):
-    print(f'Proceso {name} iniciando...')
-    time.sleep(30)  # Simula un trabajo que tarda 2 segundos
-    print(f'Proceso {name} finalizando...')
+    print("Proceso " + name + " iniciando... ")
+    time.sleep(10)  # Simula un trabajo que tarda 2 segundos
+    print("Proceso " + name + " finalizando... ")
 
 if __name__ == "__main__":
     # Crear dos procesos
