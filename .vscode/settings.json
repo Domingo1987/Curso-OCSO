@@ -76,5 +76,10 @@
         "soluciones",
         "Suroeste",
         "utilizando"
-    ]
+    ],
+    "code-runner.languageIdToFileExtensionMap": {
+        "bat": ".bat",
+        "powershell": ".ps1",
+        "typescript": ".ts"
+    }
 }
