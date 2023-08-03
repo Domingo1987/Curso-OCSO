@@ -29,6 +29,6 @@ procedure Concurrente is
 
 begin
    -- Iniciar tareas
-   Tarea_1.Iniciar("Mensaje de la Tarea 1", 10);
-   Tarea_2.Iniciar("Mensaje de la Tarea 2", 10);
+   Tarea_1.Iniciar("Mensaje de la Tarea 1", 100);
+   Tarea_2.Iniciar("Mensaje de la Tarea 2", 100);
 end Concurrente;
